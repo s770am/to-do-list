@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dovid's todo list</title>
+    <link rel="shortcut icon" href="/dovid.jpg" />
+</head>
+<body>
+<div id="list_div">
+<h2>These Are The Things I Need To Do</h2>
+<%@todolist.each do |task| %>
+  <li><%= task.desciption%> <a href=<%= "/change_form/#{task.id}"%>>Change</a> <a href=<%= "/done/#{task.id}"%>>  &#9745;</a></li>
+  
+<% end %>
+
+</div>
+
+
+    <div id="create_form">
+    <a href="/create_form">Create Form</a>
+    </div>
+
+
+
+</body>
+</html>
