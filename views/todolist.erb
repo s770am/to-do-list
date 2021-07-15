@@ -6,20 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dovid's todo list</title>
     <link rel="shortcut icon" href="/dovid.jpg" />
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <div id="list_div">
-<h2>These Are The Things I Need To Do</h2>
+<h2 class="cow">These Are The Things I Need To Do</h2>
 <%@todolist.each do |task| %>
-  <li><%= task.desciption%> <a href=<%= "/change_form/#{task.id}"%>>Change</a> <a href=<%= "/done/#{task.id}"%>>  &#9745;</a></li>
+  <li class="dog grid_3"><label for="link" class="rightspace"><%= task.desciption%></label> <a class="link " href=<%= "/change_form/#{task.id}"%>>Change</a> <a class="link" href=<%= "/done/#{task.id}"%>>  &#9745;</a></li>
   
 <% end %>
 
 </div>
 
 
-    <div id="create_form">
-    <a href="/create_form">Create Form</a>
+    <div class="cow padding button_end">
+    <a class="link" href="/create_form">Create Form</a>
     </div>
 
 

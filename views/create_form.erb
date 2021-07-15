@@ -6,21 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Create Form</title>
     <link rel="shortcut icon" href="/form_pic.png" />
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <form action="/createTask" method="post">
-    <div>
-<label for="desciption">Please Enter The Desciption Of The Task:</label><br>
+    <div class="padding">
+<label for="desciption" class="dog padding">Please Enter The Desciption Of The Task:</label>
 <input type="text" name="desciption" id="desciption">
 </div>
 
-<div>
-<label for="importance">Please Enter The Importance Level Here:</label><br>
+<div class="padding">
+<label for="importance" class="dog padding">Please Enter The Importance Level Here:</label>
 <input type="number" name="importance" id="importance">
 </div>
 
 
-<input type="submit" value="Add A Task">
+<input type="submit" value="Add A Task" class="button_end padding add_task">
 </form>
 </body>
 </html>

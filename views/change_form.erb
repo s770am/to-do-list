@@ -4,23 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Update Form</title>
+    <title>Change Form</title>
     <link rel="shortcut icon" href="/form_pic.png" />
+    <link href="<%= url('/styles.css') %>" rel="stylesheet" type="text/css" />
 </head>
 <body>
     <form action="/change/<%= @task.id%>" method="post">
-    <div>
-<label for="desciption">Please Enter The New Desciption Of The Task:</label><br>
+    <div class="padding">
+<label for="desciption" class="dog padding">Please Enter The New Desciption Of The Task: </label>
 <input type="text" name="desciption" id="desciption" value="<%= @task.desciption%>">
 </div>
 
-<div>
-<label for="importance">Please Enter The New Importance Level Here:</label><br>
+<div class="padding"> 
+<label for="importance" class="dog padding">Please Enter The New Importance Level Here: </label>
 <input type="number" name="importance" id="importance" value="<%= @task.importance%>">
 </div>
 
 
-<input type="submit" value="Add A Task">
+<input type="submit" value="Add The Task" class="button_end padding add_task">
 </form>
 </body>
 </html>

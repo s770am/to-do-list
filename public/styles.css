@@ -1,0 +1,36 @@
+body{
+    background-color: chocolate;
+}
+.dog {
+    font-family: fantasy;
+    font-size: x-large;
+}
+.cow {
+    font-family: fantasy;
+    font-size: xx-large;
+}
+.link {
+    text-decoration: none;
+
+}
+.rightspace {
+    padding-right: 10vw;
+}
+.grid_3{
+display: grid;
+grid-template-columns:40% 15% 5%;
+}
+.padding{
+    margin: 1em;
+}
+.button_end{
+    border: 4px solid crimson ;
+    width: max-content;
+}
+.add_task{
+    size: 3em;
+    background-color: rgb(148, 68, 11);
+}
+.label{
+    padding-top: 1em;
+}
